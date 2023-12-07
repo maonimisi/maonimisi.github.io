@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+}
+
+.cotainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28px;
+  gap: 32px;
+  margin: 44px 0;
+}
+
+.nav li {
+  list-style: none;
+  background-color: #1864ab;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.nav li:hover {
+  background-color: #4dabf7;
+}
+
+.nav a:link {
+  text-decoration: none;
+}
+
+.nav li a {
+  color: #fff;
+}
+
+/* This section contain styling for the home page 
+*/
+.main-header {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  margin-bottom: 44px;
+}
+
+.submain-header {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.main-paragraph {
+  font-size: 16px;
+  margin-bottom: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  /* text-align: justify; */
+}
+
+.login-signup {
+  display: flex;
+  /* gap: 44px; */
+  font-size: 28px;
+  margin-bottom: 28px;
+}
+
+.login-signup a {
+  color: #fff;
+  font-weight: bold;
+  background-color: #a61e4d;
+}
+
+.login-signup a:link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.login-signup a:hover {
+  background-color: #a61e4d;
+  color: #4dabf7;
+  scale: 1.05;
+  transition: 1000ms;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+/* This section contain stylin for footer */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 44px;
+  padding: 8px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+/* This section contain styling for aside */
+.aside {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 44px;
+  margin-bottom: 24px;
+}
+
+.aside-header {
+  font-size: 24px;
+}
+
+.aside-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.aside-list a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.aside-list a:hover {
+  text-decoration: underline;
+  border-radius: 8px;
+}
+
+/* This section contain styling for about */
+.main-about-content {
+  margin: 32px 0;
+  padding: 0 16px;
+}
+
+.about-content {
+  margin-bottom: 26px;
+}
+
+.about-sub-content {
+  margin-bottom: 26px;
+}
+
+.about-content-header {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.about-sub-content-header {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.about-content-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .cotainer {
+    width: 100%;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .content-header {
+    flex-direction: column;
+  }
+
+  .copyright {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
